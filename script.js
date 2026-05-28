@@ -318,5 +318,48 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 250);
     });
 
+    // ========== PRODUCT CATALOG TAB SYSTEM ==========
+    const tabCards = document.querySelectorAll('.collection-card');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const targetTabId = card.getAttribute('data-tab');
+            if (!targetTabId) return;
+
+            // Remove active class from all cards
+            tabCards.forEach(c => c.classList.remove('active'));
+            // Add active class to clicked card
+            card.classList.add('active');
+
+            // Hide all tab contents and remove animated classes for animation re-triggering
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+                content.style.opacity = '0';
+                
+                // Reset card animations to allow re-animating
+                const cardsInTab = content.querySelectorAll('.product-card');
+                cardsInTab.forEach(c => c.classList.remove('animated'));
+            });
+
+            // Show and fade in target tab content
+            const targetContent = document.getElementById(targetTabId);
+            if (targetContent) {
+                targetContent.classList.add('active');
+                // Trigger reflow
+                void targetContent.offsetWidth;
+                targetContent.style.opacity = '1';
+                
+                // Stagger animate the visible product cards
+                const cardsInTab = targetContent.querySelectorAll('.product-card');
+                cardsInTab.forEach((c, index) => {
+                    setTimeout(() => {
+                        c.classList.add('animated');
+                    }, index * 40);
+                });
+            }
+        });
+    });
+
     console.log('🌿 Tarini Organic Aroma — Website loaded successfully.');
 });

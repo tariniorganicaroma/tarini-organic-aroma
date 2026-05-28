@@ -50,19 +50,18 @@
     <!-- ========== HERO SECTION ========== -->
     <section class="hero" id="home">
         <div class="hero-bg">
-            <img src="images/hero-bg.png" alt="Kerala tea plantations" loading="eager">
+            <img src="images/hero-bg.png" alt="Kerala spice plantations" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
             <h1 class="hero-title">
-                <span class="hero-title-line">Pure Nature,</span>
-                <span class="hero-title-line italic">Pure Taste</span>
+                <span class="hero-title-line">AUTHENTIC SPICES</span>
+                <span class="hero-title-line italic">OF WAYANAD</span>
             </h1>
-            <p class="hero-subtitle">From the lush green hills of Kerala, we bring you the world's finest organic
-                spices, handpicked with care, in all their natural purity and aromatic glory.</p>
+            <p class="hero-subtitle">Masalas | Powders | Flakes | Spices</p>
             <div class="hero-buttons">
-                <a href="#collections" class="btn btn-primary" id="btn-shop-now">Shop Now</a>
-                <a href="#collections" class="btn btn-outline" id="btn-explore">Explore Products</a>
+                <a href="#collections" class="btn btn-primary" id="btn-explore">Explore Products</a>
+                <a href="Tarini_Brochure.pdf" download class="btn btn-outline" id="btn-brochure">Download Brochure</a>
             </div>
         </div>
         <!-- WhatsApp Floating Button -->
@@ -70,6 +69,23 @@
             aria-label="Chat on WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
+    </section>
+
+    <!-- ========== ABOUT TARINI SECTION ========== -->
+    <section class="about-tarini" id="about">
+        <div class="container">
+            <div class="about-tarini-container" data-animate="fade-up">
+                <span class="section-tag">About Tarini</span>
+                <h2 class="section-title">Serving Goodness for a Better Tomorrow</h2>
+                <p class="about-tarini-content">
+                    "Since 2017, Tarini Organic Aroma has been bringing the pure essence of Wayanad to your kitchen with authentic, natural flavors. By partnering with local farmers and blending traditional practices with modern processing, we ensure every pack delivers freshness, purity, and a truly chemical-free taste of nature."
+                </p>
+                <div class="about-tarini-badge">
+                    <i class="fas fa-leaf"></i>
+                    <span>100% Farmer Sourced &amp; Chemical-Free</span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- ========== HERITAGE SECTION ========== -->
@@ -94,15 +110,17 @@
         </div>
     </section>
 
-    <!-- ========== CURATED COLLECTIONS ========== -->
+    <!-- ========== CURATED COLLECTIONS / CATALOG SYSTEM ========== -->
     <section class="collections" id="collections">
         <div class="container">
             <div class="section-header" data-animate="fade-up">
                 <h2 class="section-title center">Curated Collections</h2>
-                <p class="section-subtitle">Explore our range of handpicked organic goodness</p>
+                <p class="section-subtitle">Explore our range of handpicked organic goodness from Wayanad</p>
             </div>
+            
+            <!-- Category Tabs Selector -->
             <div class="collections-grid" data-animate="fade-up">
-                <a href="#" class="collection-card" id="card-masalas">
+                <div class="collection-card active" data-tab="masalas">
                     <div class="collection-icon">
                         <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M24 4C13 4 4 13 4 24s9 20 20 20 20-9 20-20S35 4 24 4z" />
@@ -110,18 +128,9 @@
                             <path d="M10 28h28M16 34h16" />
                         </svg>
                     </div>
-                    <span class="collection-name">Masalas & Blends</span>
-                </a>
-                <a href="#" class="collection-card" id="card-oils">
-                    <div class="collection-icon">
-                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M24 8c-4 0-8 6-8 16s4 16 8 16 8-6 8-16-4-16-8-16z" />
-                            <path d="M20 18c0-3 2-6 4-6s4 3 4 6" />
-                        </svg>
-                    </div>
-                    <span class="collection-name">Cold Pressed Oils</span>
-                </a>
-                <a href="#" class="collection-card" id="card-powders">
+                    <span class="collection-name">Masalas &amp; Blends</span>
+                </div>
+                <div class="collection-card" data-tab="powders">
                     <div class="collection-icon">
                         <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
                             <circle cx="24" cy="28" r="14" />
@@ -130,31 +139,8 @@
                         </svg>
                     </div>
                     <span class="collection-name">Health Powders</span>
-                </a>
-                <a href="#" class="collection-card" id="card-coffee">
-                    <div class="collection-icon">
-                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M8 18h24v16c0 4.4-3.6 8-8 8H16c-4.4 0-8-3.6-8-8V18z" />
-                            <path d="M32 22h4c2.2 0 4 1.8 4 4s-1.8 4-4 4h-4" />
-                            <path d="M16 10c0-2 2-4 4-4M20 12c0-2 2-4 4-4" />
-                        </svg>
-                    </div>
-                    <span class="collection-name">Coffees & Tea</span>
-                </a>
-                <a href="#" class="collection-card" id="card-pickles">
-                    <div class="collection-icon">
-                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M14 12h20v28c0 2.2-1.8 4-4 4H18c-2.2 0-4-1.8-4-4V12z" />
-                            <path d="M12 12h24" />
-                            <path d="M18 8h12" />
-                            <circle cx="20" cy="24" r="2" />
-                            <circle cx="28" cy="28" r="2" />
-                            <circle cx="22" cy="32" r="2" />
-                        </svg>
-                    </div>
-                    <span class="collection-name">Authentic Pickles</span>
-                </a>
-                <a href="#" class="collection-card" id="card-flakes">
+                </div>
+                <div class="collection-card" data-tab="flakes">
                     <div class="collection-icon">
                         <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
                             <ellipse cx="24" cy="30" rx="16" ry="10" />
@@ -162,32 +148,897 @@
                             <path d="M16 26l4-4 4 4 4-4 4 4" />
                         </svg>
                     </div>
-                    <span class="collection-name">Flakes & Mixes</span>
-                </a>
-                <a href="#" class="collection-card" id="card-whole-spices">
+                    <span class="collection-name">Organic Flakes</span>
+                </div>
+                <div class="collection-card" data-tab="spices">
                     <div class="collection-icon">
                         <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M24 4l4 8 8 2-6 6 2 8-8-4-8 4 2-8-6-6 8-2z" />
                         </svg>
                     </div>
                     <span class="collection-name">Whole Spices</span>
-                </a>
-                <a href="#" class="collection-card" id="card-ready-cook">
-                    <div class="collection-icon">
-                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <circle cx="24" cy="28" r="16" />
-                            <ellipse cx="24" cy="24" rx="12" ry="4" />
-                            <path d="M24 4v8M20 6l4 6 4-6" />
-                        </svg>
+                </div>
+            </div>
+            
+            <!-- Catalog Container -->
+            <div class="catalog-container">
+                <!-- MASALAS GRID (Active) -->
+                <div id="masalas" class="tab-content active">
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Pure Spice</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Masala/Masala-01.png" alt="Garam Masala" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Masalas &amp; Blends</span>
+                            <h3 class="product-title-text">Garam Masala</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
                     </div>
-                    <span class="collection-name">Ready to Cook</span>
-                </a>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Pure Spice</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Masala/Masala-02.png" alt="Sambar Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Masalas &amp; Blends</span>
+                            <h3 class="product-title-text">Sambar Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Pure Spice</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Masala/Masala-03.png" alt="Rasam Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Masalas &amp; Blends</span>
+                            <h3 class="product-title-text">Rasam Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Pure Spice</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Masala/Masala-04.png" alt="Chicken Masala" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Masalas &amp; Blends</span>
+                            <h3 class="product-title-text">Chicken Masala</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Pure Spice</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Masala/Masala-05.png" alt="Meat Masala" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Masalas &amp; Blends</span>
+                            <h3 class="product-title-text">Meat Masala</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Pure Spice</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Masala/Masala-06.png" alt="Fish Masala" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Masalas &amp; Blends</span>
+                            <h3 class="product-title-text">Fish Masala</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Pure Spice</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Masala/Masala-07.png" alt="Biriyani Masala" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Masalas &amp; Blends</span>
+                            <h3 class="product-title-text">Biriyani Masala</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Pure Spice</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Masala/Masala-08.png" alt="Mandhi Masala" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Masalas &amp; Blends</span>
+                            <h3 class="product-title-text">Mandhi Masala</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Pure Spice</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Masala/Masala-09.png" alt="Pickle Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Masalas &amp; Blends</span>
+                            <h3 class="product-title-text">Pickle Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- POWDERS GRID -->
+                <div id="powders" class="tab-content">
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-01.png" alt="Coffee Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Coffee Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-02.png" alt="Masala Coffee Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Masala Coffee Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-03.png" alt="Tea Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Tea Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-04.png" alt="Chilly Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Chilly Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-05.png" alt="Coriander Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Coriander Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-06.png" alt="Turmeric Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Turmeric Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-07.png" alt="Amla Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Amla Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-08.png" alt="Arrow Root Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Arrow Root Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-09.png" alt="Asafoetida Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Asafoetida Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-10.png" alt="Banana Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Banana Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-11.png" alt="Beetroot Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Beetroot Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-12.png" alt="Cinnamon Wayanadan" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Cinnamon Wayanadan</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-13.png" alt="Jackfruit Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Jackfruit Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-14.png" alt="Moringa Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Moringa Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-15.png" alt="Pepper Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Pepper Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-16.png" alt="Tomato Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Tomato Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-17.png" alt="Tulasi Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Tulasi Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-18.png" alt="Coconut Chutney Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Coconut Chutney Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-19.png" alt="Ragi Flour" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Ragi Flour</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-20.png" alt="Rice Flour" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Rice Flour</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-21.png" alt="Wheat Flour" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Wheat Flour</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-22.png" alt="Kunnankaya Powder" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Kunnankaya Powder</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-23.png" alt="Puttu Podi" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Puttu Podi</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Natural</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Powders/Powders-24.png" alt="Pathiri Podi" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Health Powders</span>
+                            <h3 class="product-title-text">Pathiri Podi</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FLAKES GRID -->
+                <div id="flakes" class="tab-content">
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Organic</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Flakes/Flakes-01.png" alt="Wheat Flakes" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Organic Flakes</span>
+                            <h3 class="product-title-text">Wheat Flakes</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Organic</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Flakes/Flakes-02.png" alt="Corn Flakes" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Organic Flakes</span>
+                            <h3 class="product-title-text">Corn Flakes</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Organic</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Flakes/Flakes-03.png" alt="Onion Flakes" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Organic Flakes</span>
+                            <h3 class="product-title-text">Onion Flakes</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Organic</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Flakes/Flakes-04.png" alt="Ragi Flakes" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Organic Flakes</span>
+                            <h3 class="product-title-text">Ragi Flakes</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SPICES GRID -->
+                <div id="spices" class="tab-content">
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-01.png" alt="Cardamom" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Cardamom</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-02.png" alt="Black Cardamom" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Black Cardamom</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-03.png" alt="Pepper" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Pepper</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-04.png" alt="Clove" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Clove</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-05.png" alt="Star Anaise" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Star Anaise</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-06.png" alt="Ajwain" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Ajwain</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-07.png" alt="Bay Leaf" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Bay Leaf</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-08.png" alt="Chiya Seed" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Chiya Seed</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-09.png" alt="Cinnamon Casia" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Cinnamon Casia</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-10.png" alt="Cinnamon Wayanadan" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Cinnamon Wayanadan</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-11.png" alt="Cumin Seed" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Cumin Seed</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-12.png" alt="Sajeera" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Sajeera</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-13.png" alt="Fennel Seed" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Fennel Seed</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-14.png" alt="Nutmeg" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Nutmeg</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-15.png" alt="Mace" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Mace</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-16.png" alt="Fenugreek" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Fenugreek</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-17.png" alt="Flax Seed" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Flax Seed</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-18.png" alt="Malabar Tamarind" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Malabar Tamarind</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-19.png" alt="Tamarind" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Tamarind</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-20.png" alt="Mustard" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Mustard</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-21.png" alt="Pathimugam" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Pathimugam</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-22.png" alt="Poppy Seed" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Poppy Seed</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-23.png" alt="Rose Petals" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Rose Petals</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-animate="fade-up">
+                        <span class="product-badge">Premium Whole</span>
+                        <div class="product-img-wrapper">
+                            <img src="images/products/Spices/Spices-24.png" alt="Sesame Seed" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category-label">Whole Spices</span>
+                            <h3 class="product-title-text">Sesame Seed</h3>
+                            <div class="product-card-footer">
+                                <span class="product-origin"><i class="fas fa-leaf"></i> Wayanad, Kerala</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== SPICES OF WAYANAD STORYTELLING ========== -->
+    <section class="storytelling" id="storytelling">
+        <div class="container">
+            <div class="storytelling-grid">
+                <div class="storytelling-content" data-animate="fade-right">
+                    <span class="storytelling-tag">Spice Paradise of Kerala</span>
+                    <h2 class="storytelling-title">Spices of <span>Wayanad</span></h2>
+                    <p class="storytelling-desc">
+                        Nestled high in the Western Ghats, Wayanad is Kerala's legendary spice garden. The unique combination of mist-clad mountains, fertile forest soil, rich biodiversity, and high rainfall creates the perfect cradle for nurturing some of the world's most aromatic and therapeutic spices.
+                    </p>
+                    <p class="storytelling-desc">
+                        At Tarini, we work hand-in-hand with native farming families to bring you hand-selected, sun-dried spices that capture the true, unaltered soul of Wayanad. No preservatives, no additives—just pure, unadulterated freshness.
+                    </p>
+                    <div class="storytelling-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                            <div class="highlight-text">
+                                <h4>Mist-Clad Terroir</h4>
+                                <p>Grown at high altitudes in pristine forest soils.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <div class="highlight-text">
+                                <h4>Farmer Partnership</h4>
+                                <p>Ethical sourcing that directly supports local farmers.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                            <div class="highlight-text">
+                                <h4>Sun-Dried Purity</h4>
+                                <p>Naturally processed to seal in therapeutic essential oils.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-box-open"></i>
+                            </div>
+                            <div class="highlight-text">
+                                <h4>Farm to Kitchen</h4>
+                                <p>Carefully packed to preserve the raw flavor profile.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storytelling-image" data-animate="fade-left">
+                    <div class="storytelling-image-wrapper">
+                        <img src="images/hero-bg.png" alt="Wayanad misty spice plantation" loading="lazy">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ========== TRUST BADGES ========== -->
-    <section class="trust-badges" id="about">
+    <section class="trust-badges" id="badges">
         <div class="container">
             <div class="badges-grid" data-animate="fade-up">
                 <div class="badge-item">
@@ -302,6 +1153,22 @@
         </div>
     </section>
 
+
+    <!-- ========== SHIPPING SECTION ========== -->
+    <section class="shipping-section">
+        <div class="container">
+            <div class="shipping-container" data-animate="fade-up">
+                <div class="shipping-icon-box">
+                    <i class="fas fa-truck-fast"></i>
+                </div>
+                <div class="shipping-text-content">
+                    <h3>Reliable Delivery <span>Within India &amp; Internationally</span></h3>
+                    <p>We partner with premier courier networks to ship our organic goodness worldwide. Every order is meticulously packed in sealed, protective food-grade packaging to preserve freshness and ensure safe delivery directly to your kitchen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ========== TESTIMONIALS ========== -->
     <section class="testimonials" id="testimonials">
         <div class="container">
@@ -401,9 +1268,7 @@
                     <ul class="footer-contact">
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Tarini Organic Aroma,<br>No. 5007 Ground Floor, Dattagalli 3rd Stage,
-                                Kanakadasanagara,, Mysore Mahanagar Palike I Circle, Mysore,
-                                Karnataka - 570022</span>
+                            <span>Tarini Organic Aroma,<br>No. 5007 Ground Floor, Dattagalli 3rd Stage, Kanakadasanagara, Mysore, Karnataka - 570022</span>
                         </li>
                         <li>
                             <i class="fas fa-phone-alt"></i>
@@ -411,8 +1276,11 @@
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
-                            <a
-                                href="mailto:tariniorganicaromaa@gmail.com"><span>tariniorganicaromaa@gmail.com</span></a>
+                            <a href="mailto:tariniorganicaromaa@gmail.com"><span>tariniorganicaromaa@gmail.com</span></a>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 8px; margin-top: 10px;">
+                            <img src="images/lg-67b5901e54504-FSSAI.webp" alt="FSSAI Logo" style="height: 28px; width: auto; object-fit: contain; background: white; padding: 2px 6px; border-radius: 4px;">
+                            <span style="font-size: 0.78rem;">Lic. No. 21226197000191</span>
                         </li>
                     </ul>
                 </div>
